@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = "env("DATABASE_URL")
+  url      = "postgresql://Malikkaleem:nopass@localhost:5432/nest"
 }
 model User {
   id        Int      @id @default(autoincrement())
